@@ -1,0 +1,57 @@
+- Operador resto 
+
+Se colocar % é possivel ter o retorno do restando da divisão
+
+exemplo:
+
+
+public class Operadores {
+	public static void main(String[] args){
+	double num1 = 10d;
+	double num2 = 23d;
+	double resto = num2%num1;
+	
+	System.out.println("Resto da divisão "+resto);
+	}
+}
+
+- Operadores de comparação 
+
+<   (menor que)
+>   (maior que)
+<=  (menor igual)
+>=  (maior igual)
+==  (igual)
+!=  (diferente)
+
+todos retornarão true ou false 
+
+exemplo:
+boolean dezMaiorQueVinte = 10 > 20;
+	System.out.println(dezMaiorQueVinte);
+
+
+ou  System.outprintln(2==2);
+
+
+- Operadores de atribuição
+
+=
+-=
++=
+/=
+%=
+*=
+
+Usa o operador de atriibuição como forma de reduzir a quantidade de código
+
+Exemplo:
+
+	int salario = 1600;
+		//Atribuir mais 1000
+		//Como seria feito sem o operador 
+		salario = salario +1000;
+		
+		//poderia ser feito assim
+		salario += 1000;
+

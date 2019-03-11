@@ -1,0 +1,138 @@
+- IF e ELSE
+
+
+- Estrutura condicional IF
+
+Sintaxe:
+
+if(literal/booleano)
+    System.out.print("Entrou no if")
+
+obs: se for apenas um código não necessita das {} mas o ideal é colocal-ás devido a melhora da legibilidade do código 
+
+exemplo;
+
+    int idade= 25;  
+    float salario = 2000;
+
+    if (idade > 18) {
+    System.out.println("Entrada permitida!");
+
+    } 
+
+-Estrutura condicional ELSE
+
+Usa para ser a condição executada quando o if for falso
+
+Sintaxe:
+
+else{
+        //código a ser executado
+
+    }
+
+exemplo:
+
+    int idade= 16;
+    float salario = 2000;
+
+    if (idade > 18) {
+    System.out.println("Entrada permitida!");
+
+    } else{
+        System.out.println("Entrada negada!");
+
+    }
+
+
+-Estrutura condicional ELSE IF
+
+Usada para fazer mais de um if, mais de uma comparação 
+
+sintaxe:
+
+esle if(condição){
+
+    //código que será executado
+
+}
+
+exemplo:
+
+
+    int idade= 23;
+    float salario = 2000;
+
+    if (idade > 18 && salario < 1200) {
+    System.out.println("Entrada permitida!");
+    System.out.println("Cliente comum");
+
+    } elseif(idade > 18 && salario >= 2000){
+        System.out.println("Entrada permitida!");
+        System.out.println("Pode torna-se vip");
+      
+    }else{
+     System.out.println("Entrada negada!");
+    
+    }
+
+
+- Operador Ternario
+
+Simplifica o if e else, quando for apenas uma comparaçãoe que seja sempre uma verificação booleano
+
+sintaxe:
+
+? <true> : <false>
+
+    int idade = 20;
+    String status= idade <18 ? "Não adulto" : "Adulto" ;
+
+
+- Exemplo 
+    //double salario = 950;
+    //double salario = 1000;
+    //double salario = 1450;
+    //double salario = 2300;
+    double salario = 6000;
+
+	double imposto;
+	if(salario < 1000){
+		imposto = salario *0.05;
+		System.out.println("Imposto: "+ imposto );
+	}else if(salario >= 1000 && salario < 2000){
+		imposto = salario * 0.10;
+		System.out.println("Imposto: "+ imposto );
+	}else if(salario >= 2000 && salario < 4000){
+		imposto = salario * 0.15;
+		System.out.println("Imposto: "+ imposto );
+	}else{
+		imposto= salario * 0.20;
+		System.out.println("Imposto: "+ imposto );
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

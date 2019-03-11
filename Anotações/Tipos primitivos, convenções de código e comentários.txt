@@ -1,0 +1,64 @@
+Aula 01
+
+- Regra: A  nomenclatura da calsse deve sempre começar com letra maiúcula, e se houver mais de um nome a primeira letra de cada palavra DEVE SER MAIÚSCULA (camel casel)
+
+Estrutura do código:
+SEMPRE deve ter o método main que será intepretado pela jvm onde todo o programa é rodado 
+
+public class PrimeiroPrograma{
+    public static void main(String[] args){
+    System.out.println("Imprimindo algo na tela")
+
+    }
+}
+
+- Cométarios:
+    //Cométario de uma linha 
+
+      /*Comentário 
+	     * de 
+	     * várias
+	     * linhas
+	     */
+	
+    /*** Documentação de toda sua classse e metodo
+		     * @param args parametro de entrada do metodo main
+		     */
+
+- Criação de variaveis:
+
+1) Tipos primitivos: int, double, float, boolean, char, byte, short, long
+
+-  Criando a variavel
+
+tipodavariavel nomedavariavel;
+Ex.:
+
+int idade;
+
+- inicializando variavel
+
+tipodavariavel nomedavariavel = atribuição;
+Ex.:
+
+int idade = 10;
+
+-Nomenclatura das variaveis
+a primeira palavra sempre deve ser minúscula se houver mais de uma as outras palavras devem começar com maiúscula
+
+int idadeCrianca = 6;
+
+Exemplo de todos os tipos primitivos
+
+int idade = 10;
+double saliorioDouble = 998;
+float salarioFloat = 998;
+byte idadeByte = 15;
+short idadeShort = 21696;
+boolean verdadeiro = true;
+boolean falso = false;
+long numeroGrande = 10001;
+char = caractere = "M"; //char armazena até 2 byte(porque armazena caracteres japonês
+String nome = "Maria"; //tipo reference usado para texto
+
+
