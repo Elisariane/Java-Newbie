@@ -1,0 +1,105 @@
+ - ARRAYS 
+
+Resolve o problema de armazenamento de apenas uma variavel desse forma com array essas variaveis se ordena em listas
+
+Por exemplo se fosse preciso guarda 5 idades teriamos que fazer dessa forma:
+
+int idade1;
+int idade2;
+int idade3;
+int idade4;
+int idade5;
+
+Com o array possuimos uma variavel de referência e então se tem varios espaços na memoria, em cada espaço(posição) é possivel guardar um valor.
+Convenções:
+
+- Os indices sempre começam em 0 
+- Sendo assim o tamanho é sempre o index + 1
+- O array é sempre um objeto
+- Sempre passar o tamanho
+Exemplo de código:
+
+Dessa forma só se tem a referencia mas não o espaço
+int[] idade;
+		
+Declarando um array		
+int[] idade = new int[3];
+		
+Para preencher o array
+idade[0] = 19; // dentro do colchetes coloca a posição em que deseja inserir;
+idade[1] = 23;
+idade[2] = 32;
+
+
+Percorrendo um array
+for(int i=0; i<idade.length; i++) {
+	System.out.println((i+1)+ "idade"+idade[i]);
+	}
+
+- Foreach
+Para cada posição da lista será armazenado na variavel aux até chegar ao fim 
+-Atentar-se para o tipo de variavel 
+
+int[] numeros = new int[]{1,2,3,4,5};
+
+for(int aux : numeros){
+ System.out.println(aux);
+}	
+
+
+- Arrays Multidimensionais (matriz)
+
+Array bidimensional 
+
+
+Cada posição referencia outro array 
+exemplo: int[] dias= new int [2][2];
+Ou seja cada posição tera outro array com 2 posições
+O segundo colchete que guardará um array do tipo int no primeiro colchete estamos especificando quantos array terá cada posição
+[0][0] =[30];
+[0][1] = [31];
+[1][0] =[29];
+[1][1] = [28];
+
+Percorrendo o array bidimensional
+o primeiro for é para percorrer os endereços do array qeu vai conter os array
+for(int i = 0; i < dias~.length; i++){
+  System.out.println(dias[i]);
+  for(int j = 0; j<dias[i].length; j++){
+	System.println(dias[i][j]);
+	
+	}
+}
+
+Percorrendo o array bidimensional com foreach
+
+for(int[] ref : dias){
+	for(int dia : ref){
+		System.println(dia);
+}
+}
+
+
+Arrays Multidimensionais 
+
+int[] numeros = new int[3];
+
+Inicializando manualmente
+
+int[][] numeros = {{0,0},{1,2,3},{0,0,0,0}};
+
+Definindo a quantidade de posições para cada array 
+
+numeros[0] = new int[2];
+
+numeros[1] = new int[](1,2,3);
+
+numeros[2] = new int[4];
+
+Percorrendo o array 
+
+for(int[] arr : numeros){
+	for(int num : arr){
+	System.out.println(num);
+}
+}

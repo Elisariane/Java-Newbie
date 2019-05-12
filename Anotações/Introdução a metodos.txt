@@ -1,0 +1,56 @@
+- Introdução a métodos
+
+Médotos é o comportamento dos objetos 
+Convenção para métodos: começa com letra minuscula em caso de compostas a primeira letra e maiscula 
+
+Criando métodos 
+1º modificador de acesso 
+2º retorno 
+3º nome do método 
+
+EXEMPLO:
+
+package teste;
+
+public class CalculadoraJava {
+	public void somaDoisNumeros(){
+		System.out.println(5+5);
+
+		} 
+	
+public void subtraiDoisNumeros() {
+	
+	System.out.println(10-5);
+}
+
+}
+
+Execuntando
+
+package teste;
+
+public class CalculadoraTest {
+ public static void main(String[] args) {
+	CalculadoraJava calc = new CalculadoraJava();
+	
+	calc.somaDoisNumeros();
+	calc.subtraiDoisNumeros();
+}
+}
+
+- Métodos com parâmetros
+
+public void multiplicarDoisNumeros(int num1, int num2) {
+	System.out.println(num1*num2);
+	
+}
+
+
+Executando..
+calc.multiplicarDoisNumeros(5, 5);
+
+
+
+
+
+

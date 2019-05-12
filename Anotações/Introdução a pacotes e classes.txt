@@ -1,0 +1,38 @@
+- Introdução a pacotes
+No java organizamos tudo por pacotes
+
+- Introdução a classes
+
+Orientação a objetos: classes são um molde de algo do mundo real 
+
+Classe: Define os atributos e métodos comuns que serão compartilhados por um objeto.
+Objeto: É uma instância de uma classe.
+
+Iremos criar um molde de alunos e apartir disso criar os objetos(que será o aluno cada qual com seus dados)
+
+public class Aluno {
+
+	public String nome;
+	public String matricula;
+	public int idade;
+}
+
+Para executar precisa criar uma classe somente para executar 
+
+public class TesteTeste {
+
+public static void main(String[] args) {
+	Aluno aluno = new Aluno();
+	aluno.nome = "João";
+	aluno.matricula ="001213";
+	aluno.idade = 15;
+	System.out.println(aluno.nome);
+	System.out.println(aluno.matricula);
+	System.out.println(aluno.idade);
+}
+}
+
+
+Coesão: uma classe fazer determinado código para o qual ela surgiu e nada além disso.
+
+
